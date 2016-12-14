@@ -54,7 +54,7 @@ public class AgentAIBehaviour : MonoBehaviour
 
 		_agent.speed = patrolSpeed;
 		Vector3 dest = path.currentWaypoint.transform.position;
-		Debug.Log (dest);
+		//Debug.Log (dest);
 		_agent.SetDestination (dest);
 		// Set the next destination point if we are closer than a threshold
 		if (Vector3.Distance (dest, transform.position) < reachedDistance)
