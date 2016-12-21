@@ -14,6 +14,10 @@ public class MovementController : MonoBehaviour
 
 	void Start ()
 	{
+		WebCamDevice[] devices = WebCamTexture.devices;
+		for( int i = 0 ; i < devices.Length ; i++ )
+			Debug.Log(devices[i].name);  
+		
 		menuCanvas = GameObject.FindWithTag ("Menu");
 	}
 
