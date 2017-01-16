@@ -17,8 +17,6 @@ public class MovementController : MonoBehaviour
 
 	void Update ()
 	{
-
-		// TODO: Improve if-else (could be smarter)
 		if (GvrViewer.Instance.Triggered && speedUpActive) {
 			speedUpActive = false;
 			Debug.Log ("Speedup deactivated");
